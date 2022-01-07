@@ -1,0 +1,38 @@
+{
+  "name": "fcqrs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "typings": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint --ext .ts src",
+    "prebuild": "rimraf lib",
+    "build": "tsc"
+  },
+  "keywords": [
+    "cqrs",
+    "fastify"
+  ],
+  "homepage": "https://github.com/joshuaavalon/fcqrs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshuaavalon/fcqrs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshuaavalon/fcqrs/issues"
+  },
+  "author": "Joshua Avalon",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "fastify-plugin": "^3.0.0"
+  },
+  "devDependencies": {
+    "@joshuaavalon/eslint-config-typescript": "^5.0.0",
+    "@types/node": "^16.11.6",
+    "eslint": "^8.2.0",
+    "fastify": "^3.25.3",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.4"
+  }
+}

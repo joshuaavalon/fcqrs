@@ -1,0 +1,23 @@
+name: main
+on:
+  - push
+  - pull_request
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    container: node:16
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm ci
+      - run: chmod -R 777 .
+      - run: npm run lint
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    container: node:16
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm ci
+      - run: chmod -R 777 .
+      - run: npm run build
