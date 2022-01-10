@@ -1,9 +1,8 @@
 {
   "name": "fcqrs",
   "version": "1.0.0",
-  "description": "",
+  "description": "CQRS plugin for Fastify.",
   "main": "./lib/index.js",
-  "typings": "./src/index.ts",
   "scripts": {
     "lint": "eslint --ext .ts src",
     "prebuild": "rimraf lib",
@@ -21,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/joshuaavalon/fcqrs/issues"
   },
+  "files": [
+    "lib"
+  ],
   "author": "Joshua Avalon",
   "license": "Apache-2.0",
   "dependencies": {
