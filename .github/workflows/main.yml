@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm ci
-      - run: chmod -R 777 .
       - run: npm run lint
   build:
     name: build
@@ -19,5 +18,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm ci
-      - run: chmod -R 777 .
       - run: npm run build
