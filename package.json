@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint --ext .ts src",
     "prebuild": "rimraf lib",
-    "build": "tsc"
+    "build": "tsc",
+    "release": "standard-version"
   },
   "keywords": [
     "cqrs",
@@ -35,6 +36,7 @@
     "fastify": "^3.25.3",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
+    "standard-version": "^9.3.2",
     "typescript": "^4.4.4"
   }
 }

@@ -1,12 +1,8 @@
 name: tag
 on:
-  workflow_run:
-    workflows:
-      - main
+  push:
     tags:
       - v*
-    types:
-      - completed
 jobs:
   publish:
     name: publish
